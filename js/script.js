@@ -1,12 +1,10 @@
 window.onload = () =>{
-    /*document.onscroll = () =>{
-        var menu = document.getElementsByClassName("menu");
-        menu[0].classList.add("opacity");
-        console.log(window.scrollY);
-    }*/
-    if (window.scrollY != 0){
-        menu[0].classList.add("opacity");
-        
-    }else console.log("zerozerozero"); 
-
+    document.addEventListener('scroll',function(){              //script used to make the menu bar appear/disappear
+        if(window.scrollY > "1"){                               // using the event listener to monitorize continually the
+            var menu = document.getElementsByClassName("menu"); //scrolling value.
+            menu[0].classList.add("opacity");
+        }else{  
+            var menu = document.getElementsByClassName("menu opacity");
+            menu[0].classList.remove("opacity");}
+    });
 }
