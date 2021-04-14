@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 @import url(textstyle.css);
+@import url(flex-utility.css);
 body{
     width:100%;
     margin:0px 0px;
 }
-.main{
+.bkgrnd{
     background-image: url('../img/background.jpg');
-    background-size:contain;
     background-repeat: no-repeat;
     width:100%;
     height:737px;
 }
-.menu{
+.navbar{
     position:fixed;
     width:100%;
     align-self:flex-start;
@@ -21,14 +25,87 @@ body{
     transition-property: background-color;
     transition-duration: 2s;
     background-color:rgba(0,0,0, 0.1);
-    padding-left:200px;
+    padding-left:180px;
     height:100px;
 }
 .opacity{
     background-color:rgba(0,0,0, 0) !important;
 }
-.logo{
+.navbar__logo{
     width:72px;
     height:72px;
     margin-right:15px;
+}
+.navbar__menu{
+    margin-left:120px;
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+.TextRoboto{
+    font-family:'roboto';
+}
+    .TextRoboto--24{
+        font-size:24px;
+    }
+.TextPoppins{
+    font-family:'poppins';
+}
+    .TextPoppins--darkblue{
+    color:#717784;
+    }
+    .TextPoppins--white{
+        color:#ffffff;
+        font-weight:400;
+    }
+    .TextPoppins--18{
+        font-size:18px;
+    }
+    .TextPoppins--26{
+        font-size:26px;
+    }
+    .TextPoppins--400{
+        font-weight:400;
+    }
+    .TextPoppins--500{
+        font-weight:500;
+    }
+.navbar__menu>li{
+    margin-right:55px;
+}
+.btn{
+    width:230px;
+    height:60px;
+    background-color:#9B9BCA;
+    transition-property: background-color;
+    transition-duration: 1s;
+    border-radius:10px;
+    border-style: none;
+}
+.btn:hover{
+    background-color:#717784;
+}
+.content{
+    padding-top:308px;
+    padding-left:190px;
+    display:flex;
+    flex-direction:column;
+}
+    .content_title{
+        font-family:'DM Serif Display';
+        font-size:56px;
+        color:#696A86;
+        line-height:56px;
+    }
+    .content_subtitle{
+        margin-top:30px;
+        line-height:27px;
+    }
+.first_section{
+    width:100%;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
 }
