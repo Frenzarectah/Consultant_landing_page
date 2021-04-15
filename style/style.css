@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 @import url(textstyle.css);
@@ -22,15 +22,16 @@ body{
     flex-direction:row;
     align-items:center;
     background-color:black;
-    transition-property: background-color;
+    transition-property: background-color, color;
     transition-duration: 2s;
     background-color:rgba(0,0,0, 0.1);
     padding-left:180px;
     height:100px;
 }
-.opacity{
+.changes{
     background-color:rgba(0,0,0, 0) !important;
 }
+
 .navbar__logo{
     width:72px;
     height:72px;
@@ -39,8 +40,13 @@ body{
 .navbar__menu{
     margin-left:120px;
     display:flex;
+    transition-property: color;
+    transition-duration: 1s;
     flex-direction: row;
     list-style: none;
+}
+.change{
+    color:#ffff !important;
 }
 .TextRoboto{
     font-family:'roboto';
@@ -56,7 +62,6 @@ body{
     }
     .TextPoppins--white{
         color:#ffffff;
-        font-weight:400;
     }
     .TextPoppins--18{
         font-size:18px;
